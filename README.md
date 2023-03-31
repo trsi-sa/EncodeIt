@@ -2,7 +2,7 @@
 Used To Encrypt Files.
 
 Commands :
-[+] - Write The File Name Or Path : Write The Name Or Path Of The File To Be Encrypted
+- [+] - Write The File Name Or Path : Write The Name Or Path Of The File To Be Encrypted
 
 Advantages :
 - Free And Open Source ✔️
