@@ -9,14 +9,19 @@ except ImportError:
     os.system("clear")
 
 #--------------------------------
-Black="\033[1;30m"       #Black
-Red="\033[1;31m"         #Red
-Green="\033[1;32m"       #Green
-Yellow="\033[1;33m"      #Yellow
-Blue="\033[1;34m"        #Blue
-Purple="\033[1;35m"      #Purple
-Cyan="\033[1;36m"        #Cyan
-White="\033[1;37m"       #White
+Black = "\033[1;30m"       #Black
+Red = "\033[1;31m"         #Red
+Green = "\033[1;32m"       #Green
+Yellow = "\033[1;33m"      #Yellow
+Blue = "\033[1;34m"        #Blue
+Purple = "\033[1;35m"      #Purple
+Cyan = "\033[1;36m"        #Cyan
+White =" \033[1;37m"       #White
+Gray = "\033[1;39m"        #Gray
+DarkRed = "\033[2;31m"     #Dark Red
+DarkBlue = "\033[2;34m"    #Drak Blue
+DarkPink = "\033[2;35m"    #Dark Pink
+DarkCyan = "\033[2;36m"    #Dark Cyan
 #--------------------------------
 
 print(Yellow+"""
