@@ -1,11 +1,12 @@
-import marshal, pyfiglet
+import marshal, pyfiglet, os
 
 try:
-    import marshal, pyfiglet
+    import marshal, pyfiglet, os
 except ImportError:
     os.system("pip install marshal")
     os.system("pip install pyfiglet")
-
+    os.system("pip install os")
+    
     os.system("clear")
 
 #--------------------------------
