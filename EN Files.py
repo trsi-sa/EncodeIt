@@ -25,7 +25,7 @@ DarkPink = "\033[2;35m"    #Dark Pink
 DarkCyan = "\033[2;36m"    #Dark Cyan
 #--------------------------------
 
-print(Yellow+"""
+print("""\033[1;33m
  _______   ________           ________ ___  ___       _______   ________      
 |\  ___ \ |\   ___  \        |\  _____\\  \|\  \     |\  ___ \ |\   ____\     
 \ \   __/|\ \  \\ \  \       \ \  \__/\ \  \ \  \    \ \   __/|\ \  \___|_    
@@ -33,12 +33,11 @@ print(Yellow+"""
   \ \  \_|\ \ \  \\ \  \       \ \  \_| \ \  \ \  \____\ \  \_|\ \|____|\  \  
    \ \_______\ \__\\ \__\       \ \__\   \ \__\ \_______\ \_______\____\_\  \ 
     \|_______|\|__| \|__|        \|__|    \|__|\|_______|\|_______|\_________\
-                                                                  \|_________|                                                                                                      
-""")
-print(White+"This Tool Was Programmed By : TLER AL-BISHI", "\nWebsite For All Accs : "+Blue+"https://linktr.ee/tler.sa")
-print(White+"- "*25)
+                                                                  \|_________| """)
+print("\033[1;37mThis Tool Was Programmed By : TLER AL-BISHI \nWebsite For All Accs : \033[1;34mhttps://linktr.ee/tler.sa")
+print("\033[1;37m- "*25)
 
-filee = input(Red+"[+] - Write The File Name Or Path : ")
+filee = input("\033[1;31m[+] - Write The File Name Or Path : ")
 
 open_file = open(filee, 'r').read()
 
