@@ -49,4 +49,4 @@ encrypt_code = open('New_'+str(filee), 'w')
 
 encrypt_code.write('import marshal\nexec(marshal.loads('+repr(encrypt_file)+'))')
 
-print("\033[1;32mThe File Has Been Successfully Encrypted! \033[1;37m: "+str(filee))
+print("\033[1;32mThe File Has Been Successfully Encrypted! \033[1;37m: \033[1;31m"+str(filee))
