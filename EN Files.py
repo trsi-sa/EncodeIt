@@ -2,7 +2,7 @@ import marshal, pyfiglet, os
 
 try:
     import marshal, pyfiglet, os
-except ImportError:
+except ModuleNotFoundError:
     os.system("pip install marshal")
     os.system("pip install pyfiglet")
     os.system("pip install os")
