@@ -37,7 +37,7 @@ print("""\033[1;33m
 print("\033[1;37mThis Tool Was Programmed By : TLER AL-BISHI \nWebsite For All Accs : \033[1;34mhttps://linktr.ee/tler.sa")
 print("\033[1;37m- "*25)
 
-filee = input("\033[1;31m[+] - Write The File Name Or Path : ")
+filee = input("\033[1;37m[\033[1;33m+\033[1;37m] - \033[1;31mWrite The File Name Or Path \033[1;37m: \033[1;31m")
 
 open_file = open(filee, 'r').read()
 
@@ -49,4 +49,4 @@ encrypt_code = open('New_'+str(filee), 'w')
 
 encrypt_code.write('import marshal\nexec(marshal.loads('+repr(encrypt_file)+'))')
 
-print(Green+"The File Has Been Successfully Encrypted! : "+str(filee))
+print("\033[1;32mThe File Has Been Successfully Encrypted! \033[1;37m: "+str(filee))
