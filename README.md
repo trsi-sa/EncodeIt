@@ -1,5 +1,7 @@
-# EN-Files Tool
+# EN Files
 ### أداة تشفير ملفات
+
+<img src="https://github.com/tlersa/EN-Files/assets/111729973/8f8d22ea-18e3-4f01-924b-586209a42e73" width="350">
 
 #### الأوامر
 - [+] - Write The File Name Or Path : أكتب اسم الملف المراد تشفيره
@@ -15,5 +17,3 @@ pip install marshal
 pip install pyfiglet
 pip install os
 ```
-
-<img src="![EN Files](https://github.com/tlersa/EN-Files/assets/111729973/1c44b3b2-fb84-46c2-abc5-47945c9a8d67)" width="300" height="600">
