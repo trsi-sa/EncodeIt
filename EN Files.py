@@ -1,52 +1,61 @@
-import marshal, pyfiglet, os
+import base64, os
 
 try:
-    import marshal, pyfiglet, os
+    import base64, os
 except ModuleNotFoundError:
-    os.system("pip install marshal")
-    os.system("pip install pyfiglet")
+    os.system("pip install base64")
     os.system("pip install os")
-    
+
     os.system("clear")
 
-#--------------------------------
-Black = "\033[1;30m"       #Black
-Red = "\033[1;31m"         #Red
-Green = "\033[1;32m"       #Green
-Yellow = "\033[1;33m"      #Yellow
-Blue = "\033[1;34m"        #Blue
-Purple = "\033[1;35m"      #Purple
-Cyan = "\033[1;36m"        #Cyan
-White =" \033[1;37m"       #White
-Gray = "\033[1;39m"        #Gray
-DarkRed = "\033[2;31m"     #Dark Red
-DarkBlue = "\033[2;34m"    #Drak Blue
-DarkPink = "\033[2;35m"    #Dark Pink
-DarkCyan = "\033[2;36m"    #Dark Cyan
-#--------------------------------
+Black = "\033[1;30m"
+Red = "\033[1;31m"
+Green = "\033[1;32m"
+Yellow = "\033[1;33m"
+Blue = "\033[1;34m"
+Purple = "\033[1;35m"
+Cyan = "\033[1;36m"
+White = "\033[1;37m"
+Gray = "\033[1;39m"
+DarkRed = "\033[2;31m"
+DarkBlue = "\033[2;34m"
+DarkPink = "\033[2;35m"
+DarkCyan = "\033[2;36m"
 
-print("""\033[1;33m
- _______   ________           ________ ___  ___       _______   ________      
-|\  ___ \ |\   ___  \        |\  _____\\  \|\  \     |\  ___ \ |\   ____\     
-\ \   __/|\ \  \\ \  \       \ \  \__/\ \  \ \  \    \ \   __/|\ \  \___|_    
- \ \  \_|/_\ \  \\ \  \       \ \   __\\ \  \ \  \    \ \  \_|/_\ \_____  \   
-  \ \  \_|\ \ \  \\ \  \       \ \  \_| \ \  \ \  \____\ \  \_|\ \|____|\  \  
-   \ \_______\ \__\\ \__\       \ \__\   \ \__\ \_______\ \_______\____\_\  \ 
-    \|_______|\|__| \|__|        \|__|    \|__|\|_______|\|_______|\_________\
-                                                                  \|_________| """)
-print("\033[1;37mThis Tool Was Programmed By : TLER AL-BISHI \nWebsite For All Accs : \033[1;34mhttps://linktr.ee/tler.sa")
-print("\033[1;37m- "*25)
+print("""\033[2;34m
+                       ___......----:'"":--....(\\
+                .-':'"":   :  :  :   :  :  :.(1\.`-.
+              .'`.  `.  :  :  :   :   : : : : : :  .';
+             :-`. :   .  : :  `.  :   : :.   : :`.`. a;
+             : ;-. `-.-._.  :  :   :  ::. .' `. `., =  ;
+             :-:.` .-. _-.,  :  :  : ::,.'.-' ;-. ,'''"
+           .'.' ;`. .-' `-.:  :  : : :;.-'.-.'   `-'
+    :.   .'.'.-' .'`-.' -._;..:---'''"~;._.-;
+    :`--'.'  : :'     ;`-.;            :.`.-'`.
+     `'"`    : :      ;`.;             :=; `.-'`.
+  \033[1;37mv1.1.0\033[2;34m     : '.    :  ;              :-:   `._-`.
+              `'"'    `. `.            `--'     `._;
+                        `'"' 
+\n\033[1;37mTHIS TOOL WAS PROGRAMMED BY TLER AL-SHAHRANI.\nPERSONAL WEBSITE : \033[1;34mhttps://tlersa.github.io/tleralshahrani/Index.html""")
+print("\033[1;37m- "*35)
 
-filee = input("\033[1;37m[\033[1;33m+\033[1;37m] - \033[1;31mWrite The File Name Or Path \033[1;37m: \033[1;31m")
+filename = input("\033[1;37m[\033[2;34m+\033[1;37m] - \033[1;37mEnter the filename : \033[2;34m")
 
-open_file = open(filee, 'r').read()
+option = input("""\033[1;37m[\033[2;34m1\033[1;37m] - Encode
+\033[1;37m[\033[2;34m2\033[1;37m] - Decode
+\033[1;37m[\033[2;34m+\033[1;37m] - \033[1;37mChoose : \033[2;34m""")
 
-compile_file = compile(open_file, '', 'exec')
-
-encrypt_file = marshal.dumps(compile_file)
-
-encrypt_code = open('New_'+str(filee), 'w')
-
-encrypt_code.write('import marshal\nexec(marshal.loads('+repr(encrypt_file)+'))')
-
-print("\033[1;32mThe File Has Been Successfully Encrypted! \033[1;37m: \033[1;31m"+str(filee))
+if option == "1":
+    with open(filename, 'rb') as file:
+        encoded_content = base64.b64encode(file.read())
+    with open("New " + filename, "wb") as file:
+        file.write(encoded_content)
+    print("\033[1;32mThe file has been successfully encoded!")
+elif option == "2":
+    with open(filename, 'rb') as file:
+        decoded_content = base64.b64decode(file.read())
+    with open("New " + filename, "wb") as file:
+        file.write(decoded_content)
+    print("\033[1;32mThe file has been successfully decoded!")
+else:
+    print("\033[1;31mPlease choose 1 or 2!")
