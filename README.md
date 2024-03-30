@@ -1,19 +1,22 @@
-# EN Files
-### أداة تشفير ملفات
+# EncodeIt
+### أداة تشفير & فك تشفير ملفات
 
-<img src="https://github.com/tlersa/EN-Files/assets/111729973/8f8d22ea-18e3-4f01-924b-586209a42e73" width="350">
+<img src="https://github.com/tlersa/EN-Files/assets/111729973/b3c7a852-39cf-47ea-82a8-ce95d2327361" width="800">
 
-#### الأوامر
-- [+] - Write The File Name Or Path : أكتب اسم الملف المراد تشفيره
+#### أوامر التثبيت
+```
+sudo git clone https://github.com/tlersa/EncodeIt.git
+cd /home/kali/EncodeIt/
+python3EncodeIt.py
+```
 
 #### المميزات :
 - مجانية ومفتوحة المصدر ✔️
-- في حال لم تكن مثبت المكاتب المطلوبة (marshal - pyfiglet) سيتم تثبيتها تلقائياً ✔️
+- في حال لم تكن مثبت المكاتب المطلوبة (base64 - os) سيتم تثبيتها تلقائياً ✔️
 - تحفظ لك اسم الملف المشفر الجديد بكلمة New_ ثم إسم الملف الذي تم تشفيره✔️
 
 #### تثبيت المكاتب
 ```
-pip install marshal
-pip install pyfiglet
+pip install base64
 pip install os
 ```
