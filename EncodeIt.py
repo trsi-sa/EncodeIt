@@ -1,12 +1,4 @@
-import base64, os
-
-try:
-    import base64, os
-except ModuleNotFoundError:
-    os.system("pip install base64")
-    os.system("pip install os")
-
-    os.system("clear")
+import base64
 
 Black = "\033[1;30m"
 Red = "\033[1;31m"
@@ -46,16 +38,11 @@ option = input("""\033[1;37m[\033[2;34m1\033[1;37m] - Encode
 \033[1;37m[\033[2;34m+\033[1;37m] - \033[1;37mChoose : \033[2;34m""")
 
 if option == "1":
-    with open(filename, 'rb') as file:
-        encoded_content = base64.b64encode(file.read())
-    with open("New " + filename, "wb") as file:
-        file.write(encoded_content)
+    with open(filename, 'rb') as file: encoded_content = base64.b64encode(file.read())
+    with open("New " + filename, "wb") as file: file.write(encoded_content)
     print("\033[1;32mThe file has been successfully encoded!")
 elif option == "2":
-    with open(filename, 'rb') as file:
-        decoded_content = base64.b64decode(file.read())
-    with open("New " + filename, "wb") as file:
-        file.write(decoded_content)
+    with open(filename, 'rb') as file: decoded_content = base64.b64decode(file.read())
+    with open("New " + filename, "wb") as file: file.write(decoded_content)
     print("\033[1;32mThe file has been successfully decoded!")
-else:
-    print("\033[1;31mPlease choose 1 or 2!")
+else: print("\033[1;31mPlease choose 1 or 2!")
