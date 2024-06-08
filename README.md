@@ -1,7 +1,7 @@
 # EncodeIt
 ## أداة ترميز (مشابه للتشفير) & فك تشفير ملفات
 
-<img src="https://github.com/tlersa/EncodeIt/assets/111729973/d34af040-744c-4909-9620-23bd1a4f3cb3" width="800">
+<img src="https://github.com/tlersa/EncodeIt/assets/111729973/d34af040-744c-4909-9620-23bd1a4f3cb3" width="1200">
 
 ### أوامر التثبيت (Linux, iSH, Termux)
 ### بالنسبة للـWindows توجد نسخة .exe
